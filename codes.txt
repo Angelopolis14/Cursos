@@ -1,0 +1,2 @@
+$powershellArguments ="./delete.ps1"
+PS C:\Users\Alguien\Documents\Diego> $app = Start-Process "powershell.exe" -ArgumentList $powershellArguments -PassThru

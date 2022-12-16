@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>Conversión de dólares en pesos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script>
+ 
+function algoritmo()
+{
+    let dolares, pesos;
+    dolares=i;
+    pesos=dolares*19.5;
+    document.formulario1.dolares.value = dolares;
+    document.formulario1.pesos.value = pesos;
+}
+ 
+        </script>
+    </head>
+    <body>
+        <form name="formulario1">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;">
+                <tbody>
+                    <tr align="center">
+                        <td colspan="2" rowspan="1">
+                            <input value="Procesar" type="button" onclick="algoritmo();" />
+                            <input type="reset" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dolares">Valor de dolares:</label>
+                        </td>
+                        <td>
+                            <input name="dolares" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pesos">Valor de pesos:</label>
+                        </td>
+                        <td>
+                            <input name="pesos" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
